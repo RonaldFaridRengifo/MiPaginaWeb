@@ -1,0 +1,73 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgb(219, 251, 255);;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 120px;
+}
+
+/* Estilos para la imagen */
+.imagen-proyecto {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.imagen-proyecto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Estilos para la línea de tiempo */
+.linea-tiempo {
+  position: relative;
+  padding-left: 30px;
+}
+
+.linea-tiempo::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #4CAF50;
+}
+
+.etapa {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.etapa::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  width: 16px;
+  height: 16px;
+  background-color: #000000;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.etapa h3 {
+  margin: 0;
+  color: #000000;
+}
+
+.etapa p {
+  margin: 5px 0 0;
+  color: #666;
+}
